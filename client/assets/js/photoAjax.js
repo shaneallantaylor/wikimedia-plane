@@ -42,7 +42,6 @@ $(document).ready(function () {
       })
       .on('drop', function (e) {
         droppedFiles = e.originalEvent.dataTransfer.files; // the files that were dropped
-        console.log('dropped files is', droppedFiles);
         showFiles(droppedFiles);
       });
 
@@ -95,9 +94,7 @@ $(document).ready(function () {
           const ajaxDataLocation = {
             "fileName": fileName,
             "selectedLocation": $(this).attr("id"),
-
           }
-          console.log($(this).attr("id"));
           $.ajax({
             url: '/upload/photo/location',
             type: 'PUT',
