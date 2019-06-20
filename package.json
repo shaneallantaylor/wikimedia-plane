@@ -4,6 +4,7 @@
   "description": "An exercise in building a frontend for a Wikipedia page",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server/server.js",
     "test": "test"
   },
   "repository": {
